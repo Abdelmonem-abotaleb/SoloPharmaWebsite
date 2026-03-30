@@ -53,6 +53,15 @@ export function ProductPage({ onAddToCart }: ProductPageProps) {
     setTimeout(() => setAdded(false), 1500);
   };
 
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1);
+      return;
+    }
+
+    navigate('/products');
+  };
+
   const discount = product.originalPrice
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
     : null;
@@ -62,7 +71,7 @@ export function ProductPage({ onAddToCart }: ProductPageProps) {
       <div className="container mx-auto px-4">
         {/* Breadcrumb / Back Navigation */}
         <button
-          onClick={() => navigate(-1)}
+          onClick={handleBack}
           className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-[#0077b6] transition-colors mb-8 group"
         >
           <div className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover:border-[#0077b6] transition-colors shadow-sm">

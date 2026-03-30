@@ -107,7 +107,7 @@ export function AboutPage() {
                 </svg>
                 <div className="relative text-center">
                   <img
-                    src="/images/59067.png"
+                    src="/logo.png"
                     alt="SoloPharma"
                     className="w-48 h-auto object-contain mx-auto drop-shadow-2xl animate-float"
                   />

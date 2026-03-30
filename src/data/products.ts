@@ -11,7 +11,7 @@ export const products: Product[] = [
     category: 'Skin Care',
     volume: '150ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A deep-cleansing antibacterial foaming wash designed to lift impurities, excess oil, and daily buildup without over-drying the skin. Suitable for everyday cleansing routines, especially for skin that needs a hygienic, refreshed feel after exposure to heat, sweat, or pollution.',
     features: ['Antibacterial', 'Foaming Formula', 'Gentle on Skin'],
   },
   {
@@ -24,7 +24,7 @@ export const products: Product[] = [
     category: 'Skin Care',
     volume: '50gm',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A rich soothing cream formulated to comfort irritated and sensitive skin while supporting long-lasting hydration. Its gentle texture helps calm visible dryness and discomfort, making it a practical daily care option for delicate skin.',
     features: ['Soothing', 'Moisturizing', 'Fast Absorbing'],
   },
   {
@@ -37,7 +37,7 @@ export const products: Product[] = [
     category: 'Personal Care',
     volume: '14 Sachets',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'Single-use skin cleanser sachets that make antibacterial care easy at home, at work, or while traveling. The compact format is ideal for quick hygienic cleansing when carrying a full bottle is not convenient.',
     features: ['Travel Friendly', 'Antibacterial', 'Easy to Use'],
   },
   {
@@ -50,7 +50,7 @@ export const products: Product[] = [
     category: 'Body Care',
     volume: '125ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A lightweight daily lotion enriched with zinc oxide to soothe, protect, and moisturize the skin. It spreads easily and is suited for routine body care where a calming, non-heavy finish is preferred.',
     features: ['Contains Zinc Oxide', 'Soothing', 'Protective'],
   },
   {
@@ -63,7 +63,7 @@ export const products: Product[] = [
     category: 'Oral Care',
     volume: '250ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A fluoride mouth wash created to support cleaner breath and stronger oral hygiene habits. The mint variant leaves a crisp cooling finish while helping reduce plaque buildup as part of daily mouth care.',
     features: ['With Fluoride', 'Fights Cavity', 'Fights Plaque', 'Mint Flavor'],
   },
   {
@@ -76,7 +76,7 @@ export const products: Product[] = [
     category: 'Face Care',
     volume: '250ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A gentle facial wash made for sensitive skin that needs effective cleansing without a stripped or tight after-feel. The formula is designed to rinse away impurities while helping preserve the skin’s comfortable balance.',
     features: ['For Sensitive Skin', 'Gentle Cleansing', 'pH Balanced'],
   },
   {
@@ -89,7 +89,7 @@ export const products: Product[] = [
     category: 'Body Care',
     volume: '100ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A cooling massage spray that delivers a refreshing sensation to tired or overworked muscles. Its spray format makes targeted application quick and convenient before or after physical activity.',
     features: ['Cooling Sensation', 'Muscle Relief', 'Easy Spray'],
   },
   {
@@ -102,7 +102,7 @@ export const products: Product[] = [
     category: 'Personal Care',
     volume: '200ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A balanced feminine wash intended for gentle daily hygiene and a fresh, clean feeling. The formula is designed for regular use with a mild profile that respects sensitive intimate care routines.',
     features: ['Balanced Formula', 'Gentle', 'Natural Ingredients'],
   },
   {
@@ -115,7 +115,7 @@ export const products: Product[] = [
     category: 'Oral Care',
     volume: '50ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A portable mint mouth spray that provides fast freshness whenever you need it. The compact size fits easily into a bag or pocket, making it useful after meals, meetings, or while on the move.',
     features: ['Mint Flavor', 'Instant Freshness', 'Portable'],
   },
   {
@@ -128,7 +128,7 @@ export const products: Product[] = [
     category: 'Body Care',
     volume: '120ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A warming massage spray developed to help support comfort during muscle tension and minor strain. The easy-spray application helps cover the needed area quickly with a comforting heat sensation.',
     features: ['Hot Sensation ', 'Muscle Spasm Relief', 'Easy spray'],
   },
   {
@@ -141,7 +141,7 @@ export const products: Product[] = [
     category: 'Face Care',
     volume: '250ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A facial wash tailored for oily skin, helping remove excess sebum and everyday residue while keeping the skin feeling fresh. Its pH-balanced profile supports regular cleansing without an overly harsh finish.',
     features: ['For Oily Skin', 'Vitamin C Powered ', 'pH Balanced'],
   },
   {
@@ -154,7 +154,7 @@ export const products: Product[] = [
     category: 'Oral Care',
     volume: '50ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A banana-flavored mouth spray that offers quick oral freshness in a pocket-sized format. It is a convenient option for users who prefer a sweeter taste profile over classic mint.',
     features: ['Banana Flavor', 'Instant Freshness', 'Portable'],
   },
   {
@@ -167,7 +167,7 @@ export const products: Product[] = [
     category: 'Oral Care',
     volume: '250ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A fluoride mouth wash for daily oral care with a gentler profile aimed at sensitive teeth. It helps freshen breath and support plaque control while fitting comfortably into a regular brushing routine.',
     features: ['With Fluoride', 'Sensitive Teeth', 'Fights Plaque',],
   },
   {
@@ -180,7 +180,7 @@ export const products: Product[] = [
     category: 'Oral Care',
     volume: '250ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A clove-flavored mouth wash that combines fluoride support with a warm, distinctive taste. It is intended for everyday use to help freshen breath and reinforce oral hygiene habits.',
     features: ['With Fluoride', 'Fights Cavity', 'Fights Plaque', 'Clove Flavor'],
   },
   {
@@ -193,17 +193,18 @@ export const products: Product[] = [
     category: 'Oral Care',
     volume: '50ml',
     gallery: [],
-    detailedDescription: 'This is a sample detailed description for the product. You can replace this text in the src/data/products.ts file to describe ingredients, usage instructions, warnings, or benefits in full detail.',
+    detailedDescription: 'A strawberry-flavored portable mouth spray for instant freshness during the day. Its travel-friendly size makes it easy to keep close for quick confidence between brushing sessions.',
     features: ['Strawberry Flavor', 'Instant Freshness', 'Portable'],
   },
 
 ];
 
+const categoryNames = ['Skin Care', 'Body Care', 'Face Care', 'Oral Care', 'Personal Care'];
+
 export const categories = [
-  { name: 'All Products', count: 15 },
-  { name: 'Skin Care', count: 3 },
-  { name: 'Body Care', count: 3 },
-  { name: 'Face Care', count: 2 },
-  { name: 'Oral Care', count: 6 },
-  { name: 'Personal Care', count: 2 },
+  { name: 'All Products', count: products.length },
+  ...categoryNames.map((name) => ({
+    name,
+    count: products.filter((product) => product.category === name).length,
+  })),
 ];

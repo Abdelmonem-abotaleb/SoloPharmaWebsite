@@ -1,7 +1,8 @@
-import { ShoppingCart, Menu, X, Phone, Mail } from 'lucide-react';
+import { ShoppingCart, Menu, X, Phone, Mail, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { useAuth } from '@/hooks/useAuth';
 
 interface HeaderProps {
   cartItemsCount: number;
@@ -21,6 +22,8 @@ function SoloPharmaLogo({ className = '' }: { className?: string }) {
 export function Header({ cartItemsCount, onCartClick }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -116,6 +119,13 @@ export function Header({ cartItemsCount, onCartClick }: HeaderProps) {
                   {cartItemsCount}
                 </span>
               )}
+            </button>
+            <button
+              onClick={() => navigate(isAuthenticated ? '/profile' : '/login')}
+              className="p-2.5 rounded-xl bg-slate-100 text-[#022047] hover:bg-sky-50 hover:text-[#0077b6] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+              aria-label={isAuthenticated ? 'Your Profile' : 'Login'}
+            >
+              <User className="w-5 h-5" />
             </button>
 
             <Button

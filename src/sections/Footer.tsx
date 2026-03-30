@@ -3,9 +3,7 @@ import {
   Phone,
   Mail,
   Facebook,
-  Twitter,
   Instagram,
-  Linkedin,
   ArrowRight,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -32,9 +30,7 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Facebook, href: 'https://www.facebook.com/citypharmaeg?mibextid=b06tZ0', label: 'Facebook', color: '#1877f2' },
-    { icon: Twitter, href: '#', label: 'Twitter', color: '#1da1f2' },
     { icon: Instagram, href: 'https://www.instagram.com/solopharma?igshid=MzRlODBiNWFlZA%3D%3D', label: 'Instagram', color: '#e1306c' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn', color: '#0077b5' },
   ];
 
   return (

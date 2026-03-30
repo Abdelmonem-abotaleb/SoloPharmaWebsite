@@ -15,3 +15,30 @@ export interface Product {
 export interface CartItem extends Product {
   quantity: number;
 }
+
+export interface AuthUser {
+  name: string;
+  email: string;
+  phone: string;
+  address: string;
+  joinDate: string;
+}
+
+export interface Order {
+  id: string;
+  date: string;
+  total: number;
+  status: 'Processing' | 'Delivered';
+  items: number;
+}
+
+export interface AuthSession {
+  sessionToken: string | null;
+  user: AuthUser | null;
+  orders: Order[];
+}
+
+export interface LoginPayload {
+  email?: string;
+  phone?: string;
+}

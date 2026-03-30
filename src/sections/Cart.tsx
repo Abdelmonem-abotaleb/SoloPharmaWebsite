@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { Minus, Plus, Trash2, ShoppingBag, Package } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import type { CartItem } from '@/types';
 
 interface CartProps {
@@ -17,6 +18,7 @@ interface CartProps {
 const FREE_SHIPPING_THRESHOLD = 500;
 
 export function Cart({ isOpen, onClose, items, onUpdateQuantity, onRemove, totalPrice }: CartProps) {
+  const navigate = useNavigate();
   const qualifiesForFreeShipping = totalPrice >= FREE_SHIPPING_THRESHOLD;
   const shippingCost = qualifiesForFreeShipping ? 0 : 50;
   const total = totalPrice + shippingCost;
@@ -132,7 +134,10 @@ export function Cart({ isOpen, onClose, items, onUpdateQuantity, onRemove, total
 
               <Button
                 className="w-full bg-gradient-to-r from-[#0077b6] to-[#00b4d8] hover:opacity-90 h-12 text-base font-bold rounded-xl shadow-lg shadow-sky-300/30"
-                onClick={() => alert('Checkout coming soon!')}
+                onClick={() => {
+                  onClose();
+                  navigate('/checkout');
+                }}
               >
                 Proceed to Checkout
               </Button>
