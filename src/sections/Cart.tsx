@@ -25,7 +25,7 @@ export function Cart({ isOpen, onClose, items, onUpdateQuantity, onRemove, total
 
   return (
     <Sheet open={isOpen} onOpenChange={onClose}>
-      <SheetContent className="w-full sm:max-w-lg flex flex-col">
+      <SheetContent className="flex h-full w-full flex-col overflow-hidden sm:max-w-lg">
         <SheetHeader className="space-y-2.5 pb-4">
           <SheetTitle className="flex items-center gap-2 text-xl">
             <ShoppingBag className="w-6 h-6 text-[#0077b6]" />
@@ -66,7 +66,7 @@ export function Cart({ isOpen, onClose, items, onUpdateQuantity, onRemove, total
               </div>
             )}
 
-            <ScrollArea className="flex-1 -mx-6 px-6">
+            <ScrollArea className="min-h-0 flex-1 -mx-6 px-6">
               <div className="space-y-3">
                 {items.map((item) => (
                   <div key={item.id} className="flex gap-4 bg-gray-50 rounded-xl p-3 border border-slate-100">
@@ -112,8 +112,7 @@ export function Cart({ isOpen, onClose, items, onUpdateQuantity, onRemove, total
               </div>
             </ScrollArea>
 
-            <div className="pt-4 space-y-4">
-              <Separator />
+            <div className="mt-4 space-y-4 border-t border-slate-100 bg-white pb-[calc(1rem+env(safe-area-inset-bottom))] pt-4">
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">Subtotal</span>
